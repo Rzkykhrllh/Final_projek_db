@@ -33,7 +33,7 @@ class InvoiceController extends Controller
     function editData($id){
         $Invoice = Invoice::find($id);
 
-        return view("Invoice.edit_stock",["data"=>$Invoice]);
+        return view("Invoice.edit_invoice",["data"=>$Invoice]);
 
     }
 

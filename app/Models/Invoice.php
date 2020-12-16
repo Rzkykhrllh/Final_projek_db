@@ -9,6 +9,8 @@ class Invoice extends Model
 {
     use HasFactory;
     Public $timestamps = false;
+    protected $primaryKey = 'invoice_no';
+
 
     public function customer(){
         return $this->hasOne(Customer::class, "customer_id", "customer_id");

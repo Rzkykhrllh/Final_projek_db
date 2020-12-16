@@ -25,7 +25,7 @@ Route::get("/editCustomer/{customer_id}","App\Http\Controllers\CustomerControlle
 Route::get("/deleteCustomer/{customer_id}","App\Http\Controllers\CustomerController@deleteData");
 Route::view("/addcustomer", "Customer\add_customer");
 Route::post("/addcustomer", "App\Http\Controllers\CustomerController@addData");
-Route::post("/edit", "App\Http\Controllers\CustomerController@update");
+Route::post("/editcustomer", "App\Http\Controllers\CustomerController@update");
 
 //Routing Stock
 Route::get('/stock', 'App\Http\Controllers\StockController@getData');
@@ -33,7 +33,7 @@ Route::get("/editStock/{stock_code}","App\Http\Controllers\StockController@editD
 Route::get("/deleteStock/{stock_code}","App\Http\Controllers\StockController@deleteData");
 Route::view("/addstock", "Stock\add_stock");
 Route::post("/addstock", "App\Http\Controllers\StockController@addData");
-Route::post("/edit", "App\Http\Controllers\StockController@update");
+Route::post("/editstock", "App\Http\Controllers\StockController@update");
 
 //Routing Invoice
 Route::get('/invoice', 'App\Http\Controllers\InvoiceController@getData');
@@ -41,4 +41,4 @@ Route::get("/editInvoice/{invoice_no}","App\Http\Controllers\InvoiceController@e
 Route::get("/deleteInvoice/{invoice_no}","App\Http\Controllers\InvoiceController@deleteData");
 Route::view("/addinvoice", "Invoice\add_Invoice");
 Route::post("/addinvoice", "App\Http\Controllers\InvoiceController@addData");
-Route::post("/edit", "App\Http\Controllers\InvoiceController@update");
+Route::post("/editinvoice", "App\Http\Controllers\InvoiceController@update");
