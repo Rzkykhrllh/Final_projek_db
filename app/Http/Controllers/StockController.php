@@ -9,7 +9,7 @@ class StockController extends Controller
 {
     
     function getData(){
-        $data = Stock::all();
+        $data = Stock::simplepaginate(50);
 
         return view("Stock.list",["Stocks"=>$data]);
     }

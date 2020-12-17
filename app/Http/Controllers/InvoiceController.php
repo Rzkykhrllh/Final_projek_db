@@ -10,7 +10,7 @@ class InvoiceController extends Controller
     
     
     function getData(){
-        $data = Invoice::all();
+        $data = Invoice::simplepaginate(50);
 
         // return $data;
         return view("Invoice.list",["Invoices"=>$data]);

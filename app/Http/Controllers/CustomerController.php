@@ -8,7 +8,7 @@ use App\Models\Customer;
 class CustomerController extends Controller
 {
     function getData(){
-        $data = Customer::all();
+        $data = Customer::simplepaginate(50);
 
         // return $data;
         return view("Customer.list",["customers"=>$data]);

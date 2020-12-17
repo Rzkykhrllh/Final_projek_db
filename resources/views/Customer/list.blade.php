@@ -52,5 +52,7 @@
             </tr>
             @endforeach
         </tbody>
-    </table>    
+    </table>
+    
+    <span>{{$customers->links()}}</span>
 </div>

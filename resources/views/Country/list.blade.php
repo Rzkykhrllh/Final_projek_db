@@ -30,7 +30,7 @@
             @foreach ($countries as $item)
             <tr>
                 <td>{{$item["country_id"]}}</td>
-                <td>{{$item->country["country_name"]}}</td>
+                <td>{{$item["country_name"]}}</td>
 
                 <td>
                     <a href="{{url ("editCountry/".$item->country_id)}}">
@@ -51,6 +51,8 @@
             @endforeach
         </tbody>
     </table>
+
+    <span>{{$countries->links()}}</span>
 
     
 </div>
