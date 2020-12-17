@@ -10,7 +10,7 @@
     <h3 class="ml-1">Add Customer</h3>
 </div>
 
-<form action="addcountry" method="POST" class="mt-4">
+<form action="addcustomer" method="POST" class="mt-4">
     @csrf
 
     <div class="form-group ml-4 mr-4">
@@ -30,8 +30,8 @@
     </div>
 
     <div class="form-group ml-4 mr-4">
-        <label for="country">Country</label>
-        <input class="form-control" id="country" type="text" name="country" placeholder="Enter Customer Country">
+        <label for="country_id">Country</label>
+        <input class="form-control" id="country" type="text" name="country_id" placeholder="Enter Customer Country">
     </div>
 
     <div class="mr-4 ml-4">
