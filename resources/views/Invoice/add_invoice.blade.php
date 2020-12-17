@@ -25,8 +25,8 @@
     </div>
 
     <div class="form-group ml-4 mr-4">
-        <label for="stock_code">Stock Code</label>
-        <input class="form-control" id="stock_code" type="text" name="stock_code" placeholder="Enter Stock Code">
+        <label for="stock_id">Stock Code</label>
+        <input class="form-control" id="stock_id" type="text" name="stock_id" placeholder="Enter Stock Id">
     </div>
 
     <div class="form-group ml-4 mr-4">

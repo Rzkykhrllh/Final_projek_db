@@ -39,14 +39,14 @@
             <tr>
                 <td>{{$item["id"]}}</td>
                 <td>{{$item["invoice_no"]}}</td>
-                <td>{{$item["stock_code"]}}</td>
+                <td>{{$item["stock_id"]}}</td>
                 <td>{{$item["quantity"]}}</td>
                 <td>{{$item["invoice_date"]}}</td>
                 <td>{{$item["customer_id"]}}</td>
-                <td>{{$item->customer->country}}</td>
+                <td>{{$item->customer->country_id}}</td>
                 <td>{{$item->stock->description}}</td>
                 <td>{{$item->stock->unit_price}}</td>
-                {{-- {{$item->stock}} --}}
+
 
                 <td>
                     <a href="{{url ("editInvoice/".$item->invoice_no)}}">
@@ -58,7 +58,7 @@
                 </td>
 
                 <td>
-                    <a href="{{url ("deleteInvoice/".$item->invoice_no)}}">
+                    <a href="{{url ("deleteInvoice/".$item->id)}}">
                         <button class="btn btn-danger">
                             Delete
                         </button>

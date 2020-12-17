@@ -17,6 +17,6 @@ class Invoice extends Model
     }
 
     public function stock(){
-        return $this->hasOne(Stock::class, "stock_code", "stock_code");
+        return $this->hasOne(Stock::class, "stock_id", "stock_id");
     }
 }
