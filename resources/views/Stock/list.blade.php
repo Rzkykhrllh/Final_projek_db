@@ -57,6 +57,8 @@
         </tbody>
         
     </table>
+
+    <span>{{$Stocks -> links()}}</span>
     
     
 

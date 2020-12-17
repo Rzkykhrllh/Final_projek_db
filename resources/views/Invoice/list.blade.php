@@ -69,6 +69,8 @@
         </tbody>
         
     </table>
+
+    <span>{{$Invoices->links()}}</span>
     
 
 </div>

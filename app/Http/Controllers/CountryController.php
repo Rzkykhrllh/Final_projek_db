@@ -8,7 +8,7 @@ use App\Models\Country;
 class CountryController extends Controller
 {
     function getData(){
-        $data = Country::all();
+        $data = Country::simplepaginate(50);
 
         // return $data;
         return view("Country.list",["countries"=>$data]);
