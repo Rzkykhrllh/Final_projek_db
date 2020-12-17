@@ -21,7 +21,7 @@
         <thead class="thead-dark">
             <tr>
                 <td>Id</td>
-                <td>Invoice Number</td>
+                {{-- <td>Invoice Number</td> --}}
                 <td>Stock Code</td>
                 <td>Quantity</td>
                 <td>Invoice Date</td>
@@ -37,8 +37,8 @@
         <tbody>
             @foreach ($Invoices as $item)
             <tr>
-                <td>{{$item["id"]}}</td>
-                <td>{{$item["invoice_no"]}}</td>
+                <td>{{$item["invoice_id"]}}</td>
+                {{-- <td>{{$item["invoice_no"]}}</td> --}}
                 <td>{{$item["stock_id"]}}</td>
                 <td>{{$item["quantity"]}}</td>
                 <td>{{$item["invoice_date"]}}</td>
@@ -49,7 +49,7 @@
 
 
                 <td>
-                    <a href="{{url ("editInvoice/".$item->invoice_no)}}">
+                    <a href="{{url ("editInvoice/".$item->invoice_id)}}">
                         <button class="btn btn-warning">
                         Edit
                         </button>
@@ -58,7 +58,7 @@
                 </td>
 
                 <td>
-                    <a href="{{url ("deleteInvoice/".$item->id)}}">
+                    <a href="{{url ("deleteInvoice/".$item->invoice_id)}}">
                         <button class="btn btn-danger">
                             Delete
                         </button>

@@ -14,18 +14,18 @@
     @csrf
 
     <div class="form-group ml-4 mr-4">
-        <label for="id">Id</label>
-        <input readonly class="form-control" id="id" type="text" name="id" value="{{$data["id"]}}">
+        <label for="invoice_id">Id</label>
+        <input readonly class="form-control" id="invoice_id" type="text" name="invoice_id" value="{{$data["invoice_id"]}}">
     </div>
-
+{{-- 
     <div class="form-group ml-4 mr-4">
         <label for="invoice_no">Invoice Number</label>
         <input readonly class="form-control" id="invoice_no" type="text" name="invoice_no" value="{{$data["invoice_no"]}}">
-    </div>
+    </div> --}}
 
     <div class="form-group ml-4 mr-4">
-        <label for="stock_code">Stock Code</label>
-        <input class="form-control" id="stock_code" type="text" name="stock_code" value="{{$data["stock_code"]}}">
+        <label for="stock_id">Stock Code</label>
+        <input class="form-control" id="stock_id" type="text" name="stock_id" value="{{$data["stock_id"]}}">
     </div>
 
     <div class="form-group ml-4 mr-4">

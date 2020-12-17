@@ -19,8 +19,7 @@ class InvoiceController extends Controller
     function addData(Request $req){
         $Invoice = new Invoice;
 
-        $Invoice["id"] = $req->id;
-        $Invoice["invoice_no"] = $req->invoice_no;
+        $Invoice["invoice_id"] = $req->invoice_id;
         $Invoice["stock_id"] = $req->stock_id;
         $Invoice["quantity"] = $req->quantity;
         $Invoice["invoice_date"] = $req->invoice_date;
@@ -40,7 +39,7 @@ class InvoiceController extends Controller
     }
 
     function deleteData($id){
-        $Invoice = Invoice::firstOrFail()->where("id", $id);
+        $Invoice = Invoice::firstOrFail()->where("invoice_id", $id);
         // $Invoice = Invoice::find($id);
 
         $Invoice->delete();
@@ -52,9 +51,7 @@ class InvoiceController extends Controller
 
     function update(Request $req){
         // Return "berhasil";
-        $Invoice = Invoice::find($req->id);
-        // return $req->country;
-        $Invoice->stock_id = $req->invoice_no;
+        $Invoice = Invoice::find($req->invoice_id);
         $Invoice->stock_id = $req->stock_id;
         $Invoice->quantity = $req->quantity;
         $Invoice->invoice_date = $req->invoice_date;
