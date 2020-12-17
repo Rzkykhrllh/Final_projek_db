@@ -15,7 +15,13 @@
 
 <div class="mt-4 ml-4 mr-4">
     
-    <table class="table table-bordered table-hover">
+    <a href="/addstock">
+        <button class="btn btn-primary"> 
+            Add Stock
+        </button>
+    </a>
+
+    <table class="mt-4 table table-bordered table-hover">
         <thead>
             <tr>
                 <td>Stock Code</td>
@@ -29,7 +35,7 @@
         <tbody>
             @foreach ($Stocks as $item)
             <tr>
-                <td>{{$item["stock_code"]}}</td>
+                <td>{{$item["stock_id"]}}</td>
                 <td>{{$item["description"]}}</td>
                 <td>{{$item["unit_price"]}}</td>
 
@@ -52,10 +58,6 @@
         
     </table>
     
-    <a href="/addstock">
-        <button class="btn btn-primary"> 
-            Add Stock
-        </button>
-    </a>
+    
 
 </div>

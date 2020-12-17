@@ -10,6 +10,7 @@ class CustomerController extends Controller
     function getData(){
         $data = Customer::all();
 
+        // return $data;
         return view("Customer.list",["customers"=>$data]);
     }
 
@@ -43,7 +44,7 @@ class CustomerController extends Controller
         // Return "berhasil";
         $customer = Customer::find($req->customer_id);
         // return $req->country;
-        $customer->country = $req->country;
+        $customer->country_id = $req->country_id;
         $customer->save();
 
         return redirect("/customer");

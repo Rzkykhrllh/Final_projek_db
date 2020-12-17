@@ -10,7 +10,7 @@
     <h3 class="ml-1">Add Customer</h3>
 </div>
 
-<form action="addstock" method="POST" class="mt-4">
+<form action="addcountry" method="POST" class="mt-4">
     @csrf
 
     <div class="form-group ml-4 mr-4">

@@ -14,6 +14,11 @@
     @csrf
 
     <div class="form-group ml-4 mr-4">
+        <label for="id">Id</label>
+        <input readonly class="form-control" id="id" type="text" name="id" value="{{$data["id"]}}">
+    </div>
+
+    <div class="form-group ml-4 mr-4">
         <label for="invoice_no">Invoice Number</label>
         <input readonly class="form-control" id="invoice_no" type="text" name="invoice_no" value="{{$data["invoice_no"]}}">
     </div>

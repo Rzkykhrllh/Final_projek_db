@@ -16,5 +16,6 @@
       <a href="/invoice" class="card-link">Invoice</a>
       <a href="/customer" class="card-link">Customer</a>
       <a href="/stock" class="card-link">Stock</a>
+      <a href="/country" class="card-link">Country</a>
     </div>
   </div>

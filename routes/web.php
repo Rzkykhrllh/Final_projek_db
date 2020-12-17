@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\StockController;
+use App\Http\Controllers\InvoiceController;
+use App\Http\Controllers\CountryController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -42,3 +46,11 @@ Route::get("/deleteInvoice/{invoice_no}","App\Http\Controllers\InvoiceController
 Route::view("/addinvoice", "Invoice\add_Invoice");
 Route::post("/addinvoice", "App\Http\Controllers\InvoiceController@addData");
 Route::post("/editinvoice", "App\Http\Controllers\InvoiceController@update");
+
+//Routing Invoice
+Route::get('/country', 'App\Http\Controllers\CountryController@getData');
+Route::get("/editCountry/{country_id}","App\Http\Controllers\CountryController@editData");
+Route::get("/deleteCountry/{country_id}","App\Http\Controllers\CountryController@deleteData");
+Route::view("/addcountry", "Country\add_Country");
+Route::post("/addcountry", "App\Http\Controllers\CountryController@addData");
+Route::post("/editcountry", "App\Http\Controllers\CountryController@update");

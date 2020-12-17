@@ -13,6 +13,12 @@
 <form action="addinvoice" method="POST" class="mt-4">
     @csrf
 
+
+    <div class="form-group ml-4 mr-4">
+        <label for="id">Id</label>
+        <input class="form-control" id="id" type="text" name="id" placeholder="Enter Invoice Id">
+    </div>
+
     <div class="form-group ml-4 mr-4">
         <label for="in_no">Invoice Number</label>
         <input class="form-control" id="in_no" type="text" name="invoice_no" placeholder="Enter Invoice Number">

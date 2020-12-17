@@ -11,4 +11,8 @@ class Customer extends Model
     Public $timestamps = false;
     // public $table = 'customers';
     protected $primaryKey = 'customer_id';
+
+    public function country(){
+        return $this->hasOne(Country::class, "country_id", "country_id");
+    }
 }
