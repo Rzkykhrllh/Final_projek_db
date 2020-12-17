@@ -12,5 +12,4 @@ class Country extends Model
     protected $primaryKey = 'country_id';
     public $incrementing = false;
     Public $timestamps = false;
-
 }

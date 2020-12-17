@@ -18,10 +18,11 @@ class CustomerController extends Controller
         $cus = new Customer;
 
         $cus["customer_id"] = $req->customer_id;
+        $cus["customer_name"] = $req->customer_name;
+        $cus["customer_email"] = $req->customer_email;
         $cus["country"] = $req->country;
 
         $cus->save();
-
     }
 
     function editData($id){

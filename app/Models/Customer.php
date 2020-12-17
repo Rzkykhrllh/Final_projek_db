@@ -9,7 +9,7 @@ class Customer extends Model
 {
     use HasFactory;
     Public $timestamps = false;
-    // public $table = 'customers';
+    protected $table = 'customers';
     protected $primaryKey = 'customer_id';
 
     public function country(){

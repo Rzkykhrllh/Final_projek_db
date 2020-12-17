@@ -18,9 +18,20 @@
         <input class="form-control" id="customer_id" type="text" name="customer_id" placeholder="Enter Customer Id">
     </div>
 
+    
     <div class="form-group ml-4 mr-4">
-        <label for="country">Customer Country</label>
-        <input class="form-control" id="country" type="text" name="country" placeholder="Enter Customer County">
+        <label for="country">Nama</label>
+        <input class="form-control" id="country" type="text" name="customer_name" placeholder="Enter Name">
+    </div>
+
+    <div class="form-group ml-4 mr-4">
+        <label for="country">Email</label>
+        <input class="form-control" id="country" type="text" name="customer_email" placeholder="Enter Email Address">
+    </div>
+
+    <div class="form-group ml-4 mr-4">
+        <label for="country">Country</label>
+        <input class="form-control" id="country" type="text" name="country" placeholder="Enter Customer Country">
     </div>
 
     <div class="mr-4 ml-4">

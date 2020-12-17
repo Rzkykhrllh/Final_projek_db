@@ -30,7 +30,6 @@ class StockController extends Controller
         $stock = Stock::find($id);
 
         return view("Stock.edit_stock",["data"=>$stock]);
-
     }
 
     function deleteData($id){

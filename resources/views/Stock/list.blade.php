@@ -40,13 +40,13 @@
                 <td>{{$item["unit_price"]}}</td>
 
                 <td>
-                    <a href="{{url ("editStock/".$item->stock_code)}}">
+                    <a href="{{url ("editStock/".$item->stock_id)}}">
                         <button class="btn btn-warning">Edit</button>
                     </a>
                 </td>
 
                 <td>
-                    <a href="{{url ("deleteStock/".$item->stock_code)}}">
+                    <a href="{{url ("deleteStock/".$item->stock_id)}}">
                         <button class="btn btn-danger">
                             Delete
                         </button>
@@ -60,6 +60,4 @@
 
     <span>{{$Stocks -> links()}}</span>
     
-    
-
 </div>

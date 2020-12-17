@@ -21,7 +21,7 @@ class CountryController extends Controller
         $cus["country_name"] = $req->country_name   ;
 
         $cus->save();
-
+        return redirect("/country");
     }
 
     function editData($id){

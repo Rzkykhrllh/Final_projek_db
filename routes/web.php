@@ -6,7 +6,6 @@ use App\Http\Controllers\StockController;
 use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\CountryController;
 
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,7 +21,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
 //Routing Customer
 Route::get('/customer', 'App\Http\Controllers\CustomerController@getData');
 Route::get("/editCustomer/{customer_id}","App\Http\Controllers\CustomerController@editData");
@@ -33,8 +31,8 @@ Route::post("/editcustomer", "App\Http\Controllers\CustomerController@update");
 
 //Routing Stock
 Route::get('/stock', 'App\Http\Controllers\StockController@getData');
-Route::get("/editStock/{stock_code}","App\Http\Controllers\StockController@editData");
-Route::get("/deleteStock/{stock_code}","App\Http\Controllers\StockController@deleteData");
+Route::get("/editStock/{stock_id}","App\Http\Controllers\StockController@editData");
+Route::get("/deleteStock/{stock_id}","App\Http\Controllers\StockController@deleteData");
 Route::view("/addstock", "Stock\add_stock");
 Route::post("/addstock", "App\Http\Controllers\StockController@addData");
 Route::post("/editstock", "App\Http\Controllers\StockController@update");
@@ -47,7 +45,7 @@ Route::view("/addinvoice", "Invoice\add_Invoice");
 Route::post("/addinvoice", "App\Http\Controllers\InvoiceController@addData");
 Route::post("/editinvoice", "App\Http\Controllers\InvoiceController@update");
 
-//Routing Invoice
+//Routing Country
 Route::get('/country', 'App\Http\Controllers\CountryController@getData');
 Route::get("/editCountry/{country_id}","App\Http\Controllers\CountryController@editData");
 Route::get("/deleteCountry/{country_id}","App\Http\Controllers\CountryController@deleteData");

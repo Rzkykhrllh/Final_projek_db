@@ -30,6 +30,6 @@
     </div>
 
     <div class="mr-4 ml-4">
-        <button class="btn btn-primary btn-block" type="submit">Tambah Customer</button>
+        <button class="btn btn-primary btn-block" type="submit">Add Stock</button>
     </div>
 </form>
