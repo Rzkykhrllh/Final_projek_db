@@ -16,13 +16,23 @@
     @csrf
 
     <div class="form-group ml-4 mr-4">
-        <label for="invoice_no">Customer Id</label>
-        <input readonly class="form-control" id="invoice_no" type="text" name="customer_id" value="{{$data["customer_id"]}}">
+        <label for="customer_id">Id</label>
+        <input readonly class="form-control" id="customer_id" type="text" name="customer_id" value="{{$data["customer_id"]}}">
+    </div>
+    
+    <div class="form-group ml-4 mr-4">
+        <label for="customer_name">Name</label>
+        <input class="form-control" id="customer_name" type="text" name="customer_name" value="{{$data["customer_name"]}}">
     </div>
 
     <div class="form-group ml-4 mr-4">
-        <label for="country">Customer Country</label>
-        <input class="form-control" id="country" type="text" name="country" value="{{$data["country"]}}">
+        <label for="email">Email</label>
+        <input class="form-control" id="email" type="text" name="email" value="{{$data["customer_email"]}}">
+    </div>
+
+    <div class="form-group ml-4 mr-4">
+        <label for="country_id">Country Id</label>
+        <input class="form-control" id="country_id" type="text" name="country_id" value="{{$data["country_id"]}}">
     </div>
 
     <div class="mr-4 ml-4">

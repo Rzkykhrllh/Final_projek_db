@@ -15,12 +15,12 @@
     @csrf
 
     <div class="form-group ml-4 mr-4">
-        <label for="stock_code">Stock Code</label>
-        <input class="form-control" id="stock_code" type="text" name="stock_code" placeholder="Enter Stock Code">
+        <label for="stock_id">Stock Id</label>
+        <input class="form-control" id="stock_id" type="text" name="stock_id" placeholder="Enter Stock Code">
     </div>
 
     <div class="form-group ml-4 mr-4">
-        <label for="description">Stock Descriotion</label>
+        <label for="description">Stock Description</label>
         <input class="form-control" id="description" type="text" name="description" placeholder="Enter Stock Descriotion">
     </div>
 

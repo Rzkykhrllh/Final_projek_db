@@ -17,7 +17,7 @@ class StockController extends Controller
     function addData(Request $req){
         $stock = new Stock;
 
-        $stock["stock_code"] = $req->stock_code;
+        $stock["stock_id"] = $req->stock_id;
         $stock["description"] = $req->description;
         $stock["unit_price"] = $req->unit_price;
 
@@ -34,7 +34,7 @@ class StockController extends Controller
     }
 
     function deleteData($id){
-        $stock = Stock::firstOrFail()->where("stock_code", $id);
+        $stock = Stock::firstOrFail()->where("stock_id", $id);
         $stock->delete();
 
         return redirect("/stock");
@@ -42,7 +42,7 @@ class StockController extends Controller
 
     function update(Request $req){
         // Return "berhasil";
-        $stock = Stock::find($req->stock_code);
+        $stock = Stock::find($req->stock_id);
         // return $req->country;
         $stock->description = $req->description;
         $stock->unit_price = $req->unit_price;

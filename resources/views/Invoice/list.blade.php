@@ -10,9 +10,17 @@
 </div>
 
 <div class="mt-4 mr-4 ml-4">
-    <table class="table table-bordered table-hover" >
+
+    <a href="/addinvoice">
+        <button class="btn btn-primary"> 
+            Add Invoice
+        </button>
+    </a>
+
+    <table class="mt-4 table table-bordered table-hover" >
         <thead class="thead-dark">
             <tr>
+                <td>Id</td>
                 <td>Invoice Number</td>
                 <td>Stock Code</td>
                 <td>Quantity</td>
@@ -29,6 +37,7 @@
         <tbody>
             @foreach ($Invoices as $item)
             <tr>
+                <td>{{$item["id"]}}</td>
                 <td>{{$item["invoice_no"]}}</td>
                 <td>{{$item["stock_code"]}}</td>
                 <td>{{$item["quantity"]}}</td>
@@ -60,10 +69,6 @@
         </tbody>
         
     </table>
-    <a href="/addinvoice">
-        <button class="btn btn-primary"> 
-            Add Invoice
-        </button>
-    </a>
+    
 
 </div>

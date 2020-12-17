@@ -13,8 +13,8 @@
     @csrf
 
     <div class="form-group ml-4 mr-4">
-        <label for="stock_code">Customer Id</label>
-        <input readonly class="form-control" id="stock_code" type="text" name="stock_code" value="{{$data["stock_code"]}}">
+        <label for="stock_id">Customer Id</label>
+        <input readonly class="form-control" id="stock_id" type="text" name="stock_id" value="{{$data["stock_id"]}}">
     </div>
 
     <div class="form-group ml-4 mr-4">
